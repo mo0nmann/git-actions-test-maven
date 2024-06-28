@@ -20,8 +20,8 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
 
-    - name: Run Custom Gradle action
-      uses: ./.github/actions/gradle
+    - name: Run Custom Maven action
+      uses: ./.github/actions/maven
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         java_version: 17
