@@ -4,7 +4,7 @@ ENV APP_HOME=/usr/app
 
 WORKDIR ${APP_HOME}
 
-COPY build/libs/*.jar demo.jar
+COPY target/*.jar demo.jar
 
 EXPOSE 8080
 
